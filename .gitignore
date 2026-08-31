@@ -1,0 +1,14 @@
+*.har
+*.tmp
+*.whl
+__pycache__/
+.venv/
+.uv-cache/
+.uv-python/
+
+# Temporary files created while investigating CIST
+cist/
+cist-*.dist-info/
+cist-api.json
+cist-headers.txt
+cist-schedule-live.html
