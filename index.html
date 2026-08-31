@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1261a6">
+    <meta name="description" content="Зручний розклад занять групи УК-26-1 ХНУРЕ">
+    <title>Розклад УК-26-1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="./" aria-label="Розклад УК-26-1">
+          <span class="brand-mark" aria-hidden="true">Н</span>
+          <span>
+            <strong>Розклад</strong>
+            <small>УК-26-1 · ХНУРЕ</small>
+          </span>
+        </a>
+        <span class="source-badge"><i aria-hidden="true"></i> Дані CIST</span>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">Навчальний розклад</p>
+          <h1 id="page-title">Група УК-26-1</h1>
+          <p class="current-date" id="current-date">—</p>
+        </div>
+        <p class="updated" id="updated-at">Завантажуємо актуальні дані…</p>
+      </section>
+
+      <section class="schedule-panel" aria-label="Розклад занять">
+        <div class="toolbar">
+          <div class="view-switcher" role="group" aria-label="Режим перегляду">
+            <button class="view-button is-active" type="button" data-view="day">Сьогодні</button>
+            <button class="view-button" type="button" data-view="week">Тиждень</button>
+          </div>
+          <button class="today-button" id="today-button" type="button">Сьогодні</button>
+        </div>
+
+        <div class="date-navigation">
+          <button class="nav-button" id="previous-button" type="button" aria-label="Попередній день">←</button>
+          <div class="date-heading" aria-live="polite">
+            <p id="date-weekday">—</p>
+            <h2 id="date-title">Завантаження…</h2>
+          </div>
+          <button class="nav-button" id="next-button" type="button" aria-label="Наступний день">→</button>
+        </div>
+
+        <div id="schedule-content" aria-live="polite">
+          <div class="loading-state">
+            <span class="loader" aria-hidden="true"></span>
+            <p>Отримуємо розклад…</p>
+          </div>
+        </div>
+      </section>
+
+      <p class="notice">Розклад може змінюватися. Джерело даних — офіційна система CIST.</p>
+    </main>
+  </body>
+</html>
